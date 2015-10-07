@@ -1,3 +1,2 @@
 # Brainstormer
-Brainstorming Tool
-In honor of the holy on and most esteemed praise be her name Saxe
+In honor of the holy and most esteemed one, praise be her name Saxe: The Brainstorming Tool
