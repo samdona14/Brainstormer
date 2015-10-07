@@ -1,0 +1,14 @@
+#button {
+text-allign: center;
+color: rgb(52, 182, 189)
+}
+* {
+  text-align: center;
+  align-items: center;
+
+}
+
+form {
+  color: #900;
+  font-weight: bold;
+}

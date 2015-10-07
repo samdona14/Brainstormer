@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src='library'>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  </script>
+</head>
+<body>
+  <img src="img/dinner.png" id="image">
+  <script>
+  var dict = {
+    1: 'bike.png',
+    2: 'corn.png',
+    3:'dinner.png',
+    4:'dog.png',
+    5:'flippers.png',
+    6:'lumberjack.png',
+    7:'shoppingcart.png',
+    8:'stanford.png'
+  }
+  var randomNum = Math.floor(Math.random() * 7) + 1;
+  console.log("rand", randomNum);
+  var imageUrl = dict[randomNum];
+  console.log("Imgur", imageUrl);
+  document.getElementById('image').src = 'img/' + imageUrl;
+  console.log(imageUrl);
+  </script>
+<div id="button">
+  <form action='ideas.html' method="get">
+  Idea 1:<br>
+  <input type="text" name="idea 1">
+  <br>
+  Idea 2:<br>
+  <input type="text" name="idea 2">
+  <br>
+  Idea 3:<br>
+  <input type='text' name='idea 3'>
+  <br><br>
+<input type="submit" value="Next One">
+  </form>
+</div>
+</body>
+</html>
