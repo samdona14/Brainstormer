@@ -2,10 +2,12 @@
 <html>
 <head>
   <script type="text/javascript" src='library'>
-  <link rel="stylesheet" type="text/css" href="css.css">
+
   </script>
+  <link rel="stylesheet" type="text/css" href="css">
 </head>
-<body>
+<body onload="return ran_col()" id="bgcc">
+
   <img src="img/dinner.png" id="image">
   <script>
   var dict = {
@@ -25,19 +27,41 @@
   document.getElementById('image').src = 'img/' + imageUrl;
   console.log(imageUrl);
   </script>
-<div id="button">
-  <form action='ideas.html' method="get">
-  Idea 1:<br>
-  <input type="text" name="idea 1">
-  <br>
-  Idea 2:<br>
-  <input type="text" name="idea 2">
-  <br>
-  Idea 3:<br>
-  <input type='text' name='idea 3'>
-  <br><br>
-<input type="submit" value="Next One">
-  </form>
+
+
+<div id="form">
+    <form action='ideas.html' method="get">
+        Idea 1:<br>
+        <input type="text" name="idea 1">
+          <br>
+        Idea 2:<br>
+          <input type="text" name="idea 2">
+            <br>
+        Idea 3:<br>
+          <input type='text' name='idea 3'>
+            <br><br>
+            <input id='button' type="submit" value="Next One" >
+</div>
+<div id='changeColorMeth'>
+  <script type="text/javascript">
+
+
+  function ran_col() { //function name
+    var color = '#'; // hexadecimal starting symbol
+    var letters = ['3e9798','5c3fb4', 'c8cc7d', '9d26d0']; //Set your colors here
+    color += letters[Math.floor(Math.random() * letters.length)];
+    document.getElementById('bgcc').style.background = color; // Setting the random color on your div element.
+             }
+
+  func text_color() {
+    var text_color = #000000
+    if text_color == color
+      document.getElementById('bgcc').style.background = color;
+  }
+             </script>
+  <p>
+    Yay!
+  </p>
 </div>
 </body>
 </html>
